@@ -12,7 +12,7 @@ dependency_graph.py folder output filename [-h] [-f {bmp,gif,jpg,png,pdf,svg}] [
 positional arguments:
   folder                Path to the folder to scan
   output                Path of the output file without the extension
-  filename				Name of the output file without extension
+  filename              Name of the output file without extension
 
 optional arguments:
   -h, --help            show this help message and exit
