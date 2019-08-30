@@ -3,7 +3,7 @@
 Graphviz Python library
 
 ## Usage
-You can run this script from command line:
+You can run this script from the command line:
 ```
 dependency_graph.py folder output filename [-h] [-f {bmp,gif,jpg,png,pdf,svg}] [-v] [-c]
 ```
@@ -11,7 +11,7 @@ dependency_graph.py folder output filename [-h] [-f {bmp,gif,jpg,png,pdf,svg}] [
 ```
 positional arguments:
   folder                Path to the folder to scan
-  output                Path of the output file without the extension
+  output                Path of the output files without the extension
   filename              Name of the output file without extension
 
 optional arguments:
