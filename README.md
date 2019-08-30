@@ -3,7 +3,7 @@
 Graphviz Python library
 
 ## Usage
-
+You can run this script from command line:
 ```
 dependency_graph.py [-h] [-f {bmp,gif,jpg,png,pdf,svg}] [-v] [-c]
                            folder output
