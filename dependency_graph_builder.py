@@ -84,6 +84,7 @@ def choose_color(node, folder, color_to_folder):
 
 
 def add_label(graph, color_to_folder):
+    """ Add label  """
     with graph.subgraph(name='cluster_label',
                         graph_attr={'bgcolor': 'grey93', 'label': 'Label',
                                     'labelfontsize': '18', 'pencolor': 'grey93',
@@ -135,10 +136,9 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--format', help='Format of the output', default='pdf',
                         choices=['bmp', 'gif', 'jpg', 'png', 'pdf', 'svg'])
     parser.add_argument('-v', '--view', action='store_true', help='View the graph')
-    parser.add_argument('-r', '--recursion', action='store_true', help='Scan all the subfolders')
     parser.add_argument('-c', '--cluster', action='store_true', help='Create a cluster for each subfolder')
     args = parser.parse_args()
     graph = create_graph(args.folder, args.cluster)
     graph.format = args.format
-    graph.save('dependency_graph.dot', args.output)
-    graph.render('rendered-graph-dot-engine-with-label', args.output, cleanup=True, view=args.view)
+    graph.save(f'{args.filename}.dot', args.output)
+    graph.render(args.filename, args.output, cleanup=True, view=args.view)
